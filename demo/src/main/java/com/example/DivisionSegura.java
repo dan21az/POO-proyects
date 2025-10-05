@@ -10,7 +10,7 @@ public class DivisionSegura {
 	    		System.out.println("El resultado es : " + z);
 			} 
 			else
-	    		System.out.println("Atención! se pretende dividir por 0");
+	    		System.out.println("Atención! se pretende dividr por 0");
         }
  
 }
