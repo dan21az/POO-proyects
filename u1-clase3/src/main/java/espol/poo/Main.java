@@ -16,7 +16,7 @@ public class Main {
             restaurante1.nombre = "KFC";
             restaurante1.pickup = true;
 
-        restaurante1.procesarPedido("Alitas", cliente1 );
+        restaurante1.procesarPedido("Ali", cliente1 );
  
     }
 
