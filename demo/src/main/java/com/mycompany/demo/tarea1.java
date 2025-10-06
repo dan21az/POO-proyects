@@ -76,6 +76,7 @@ class ejercicio4 {
                 contador ++;
             } else {
                 System.out.println("El promedio es: " + (suma/contador) );
+                condicion = false;
             }
         }
         entrada.close();
