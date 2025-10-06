@@ -84,5 +84,7 @@ class ejercicio4 {
 }
 
 public class tarea1 {
-
+    public static void main(String[] args) {
+        System.out.println('X'*4);
+    }
 }
