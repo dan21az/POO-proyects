@@ -1,0 +1,12 @@
+Al agregar una nueva carpeta en java, hay que evitar que el target (los .class) se carguen al repositorio
+IMPORTANTE: Para ello vamos a la carpeta del proyecto, en una terminal desde el explorador o 
+abriendo la carpeta directamente la carpeta del proyecto en la terminal del Visual Studio Code (Ctrl + ñ)
+
+Paso 1 (Elimina el target del repositorio)
+git rm -r --cached target
+
+Paso 2 (Hace commit)
+git commit -m "Remove target folder from repo and add to .gitignore"
+
+Paso 3 (Guarda los cambios)
+git push
