@@ -83,6 +83,48 @@ class ejercicio4 {
     }
 }
 
+class ejercicio5 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Ingrese un número: ");
+        int numero = entrada.nextInt();;
+        int suma = 0;
+        while ( numero > 0) {
+            int digito = numero % 10;
+            suma  = suma + digito;
+            numero = numero/10;
+        }
+        System.out.println("La suma es: " + suma );
+        entrada.close();
+    }
+}
+
+class ejercicio6 {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        short x  = (short) (100*Math.random()+1);
+        int i = 5;
+        boolean ganador = true;
+        while(ganador && (i>0)) {
+            System.out.println("Tienes " + i +" intentos.");
+            System.out.print("Ingrese un número: ");
+            int numero = entrada.nextInt();
+            if(numero == x) {
+                ganador = false;
+                System.out.println("Acertaste!, el número es: "+x);
+            } else if(numero<x) {
+                System.out.println("El número que ingresaste es menor.");
+            } else if(numero>x) {
+                System.out.println("El número que ingresaste es mayor.");
+            }
+            i = i-1;
+        }
+        entrada.close();
+        if(ganador == true && i==0) {
+            System.out.println("Perdiste!, el número era: "+x);
+        }
+    }
+}
 public class tarea1 {
 
 }
