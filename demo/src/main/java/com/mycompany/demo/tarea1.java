@@ -101,6 +101,7 @@ class ejercicio5 {
 
 class ejercicio6 {
     public static void main(String[] args) {
+        System.out.println("Adivina el número");
         Scanner entrada = new Scanner(System.in);
         short x  = (short) (100*Math.random()+1);
         int i = 5;
