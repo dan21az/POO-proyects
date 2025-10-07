@@ -108,15 +108,15 @@ class ejercicio6 {
         boolean ganador = true;
         while(ganador && (i>0)) {
             System.out.println("Tienes " + i +" intentos.");
-            System.out.print("Ingrese un número: ");
+            System.out.print("Ingresa un número: ");
             int numero = entrada.nextInt();
             if(numero == x) {
                 ganador = false;
                 System.out.println("Acertaste!, el número es: "+x);
             } else if(numero<x) {
-                System.out.println("El número que ingresaste es menor.");
+                System.out.println("El número que ingresaste es menor al que buscas.");
             } else if(numero>x) {
-                System.out.println("El número que ingresaste es mayor.");
+                System.out.println("El número que ingresaste es mayor al que buscas.");
             }
             i = i-1;
         }
