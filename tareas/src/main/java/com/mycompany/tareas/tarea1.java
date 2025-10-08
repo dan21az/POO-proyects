@@ -1,4 +1,4 @@
-package com.mycompany.demo;
+package com.mycompany.tareas;
 
 import java.util.Scanner;
 
