@@ -29,7 +29,7 @@ class ejercicio2 {
         int i = 0;
 
         while(i <= 12 ) {
-            System.out.println(numero + " * " + i + "\t=\t" + (numero*i)   );
+            System.out.println(numero + " * " + i + "\t=  " + (numero*i)   );
             i ++;
         }
     }
@@ -126,6 +126,59 @@ class ejercicio6 {
         }
     }
 }
+
+class ejercicio7 {
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("size: ");
+        int size = entrada.nextInt();
+        entrada.close();
+        int ancho = size * 2;
+
+        System.out.print("+");
+        for (int i = 0; i < ancho; i++) {
+            System.out.print("-");
+        }
+        System.out.println("+");
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("|");
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < ancho - (2 * i); j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("|");
+        }
+
+        for (int i = size - 2; i >= 0; i--) {
+            System.out.print("|");
+            for (int j = 0; j < i; j++) { 
+                System.out.print(" ");  
+            }
+            for (int j = 0; j < ancho - (2 * i); j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("|");
+        }
+
+        System.out.print("+");
+        for (int i = 0; i < ancho; i++) {
+            System.out.print("-");
+        }
+        System.out.println("+");
+    }
+}
+
+
 public class tarea1 {
 
 }
