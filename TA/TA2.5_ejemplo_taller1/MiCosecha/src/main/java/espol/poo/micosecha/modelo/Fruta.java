@@ -9,7 +9,7 @@ public class Fruta {
         this.calorias = calorias;
     }
     
-    public String getNombre(){
+    public String getnombre(){
         return nombre;
     }
     
