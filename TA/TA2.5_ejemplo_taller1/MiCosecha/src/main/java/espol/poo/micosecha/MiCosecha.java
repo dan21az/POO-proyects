@@ -6,6 +6,8 @@
 package espol.poo.micosecha;
 import java.util.Scanner;
 import espol.poo.micosecha.modelo.*;
+
+//test
 /**
  *
  * @author Gladys
