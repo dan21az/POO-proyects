@@ -32,7 +32,7 @@ public class Paquete {
         } else {
             estado = "No Asignado";
         }
-        System.err.println("Paquete [código="+codigo+", pesoKg="+pesoKG+", estadoEnvio="+estadoEnvio+" -"+estado+"] ");
+        System.out.println("Paquete [código="+codigo+", pesoKg="+pesoKG+", estadoEnvio="+estadoEnvio+" -"+estado+"] ");
     }
 
     //Getters

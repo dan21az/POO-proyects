@@ -16,14 +16,14 @@ public class Repartidor {
         String codigo = paquete.getCodigo();
         double peso = paquete.getPesoKG();
         if (estado){ //Vertificar si esta asignado
-            System.err.println("Paquete "+codigo+" ya se encuentra asignado.");
+            System.out.println("Paquete "+codigo+" ya se encuentra asignado.");
         } else {
             if (peso<=capacidadCargaMaxKg){ //Verificar que no exceda el peso
                 paquete.asignarPaquete();
                 paquete.actualizarEstado("En Ruta");
-                System.err.println("Paquete "+codigo+" asignado exitosamente. ");
+                System.out.println("Paquete "+codigo+" asignado exitosamente. ");
             } else{
-                System.err.println("Paquete "+codigo+" excede la capacidad máxima de "+capacidadCargaMaxKg+", no puede ser llevado por el repartidor "+nombre+".");
+                System.out.println("Paquete "+codigo+" excede la capacidad máxima de "+capacidadCargaMaxKg+", no puede ser llevado por el repartidor "+nombre+".");
             }
         }
     }
