@@ -2,7 +2,7 @@ package modelo;
 import java.util.Random;
 
 public class Servidor {
-    private String nombre, ip, clave;
+    private String nombre, ip, clave = "";
     private float disco, memoria;
     private int cantidadProcesador;
 

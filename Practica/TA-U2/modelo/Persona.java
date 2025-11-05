@@ -23,5 +23,11 @@ public class Persona{
     return "ID: " + id +", nombre: " + nombre + ", adopciones: " + lstMascotas.size();
   }
 
+  public void Adoptar(Mascota m, Persona p){
+    lstMascotas.add(m);
+    m.setDueno(p);
+
+  }
+
 
 }

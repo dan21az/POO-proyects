@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 import modelo.*;
 
@@ -39,7 +38,6 @@ class Main {
       }
     }
     entrada.close();
-
-    System.out.println("Hello world!");
+    
   }
 }
