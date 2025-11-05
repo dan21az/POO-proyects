@@ -22,10 +22,10 @@ public class Persona{
   public String toString(){
     return "ID: " + id +", nombre: " + nombre + ", adopciones: " + lstMascotas.size();
   }
-
-  public void Adoptar(Mascota m, Persona p){
+  
+  public void adoptar(Mascota m){
     lstMascotas.add(m);
-    m.setDueno(p);
+    m.setDueno(this);
 
   }
 

@@ -24,6 +24,15 @@ public class Refugio{
     
   }
 //crear el método buscarMascota
+
+  public Mascota buscarMascota(String nombre) {
+    for (Mascota m : lstMascotas) {
+      if (m.getNombre().equals(nombre)) {
+        return m;
+      } 
+    }
+      return null;  
+  }
   
 //método que elimina a una mascota de la lista
   //revise este método e investiga sobre Iterator
@@ -47,8 +56,28 @@ public class Refugio{
     Refugio r = new Refugio();
     //complete este metodo para simular UNA adopcion
     Scanner sc = new Scanner(System.in);
-    
+    //Solicitar datos
+    System.out.print("Ingrese id: ");
+    String id = sc.nextLine();
+    System.out.print("Ingrese nombre: ");
+    String nombre = sc.nextLine();
+    Persona p1 = new Persona(id,nombre);//Crear Objeto Persona
+    r.lstDuenos.add(p1);//Añadir objeto a lstDueños
+
+    System.out.print("Ingrese el nombre de la mascota que desea adoptar: ");
+    String nombreM = sc.nextLine();
     sc.close();
+    Mascota m = r.buscarMascota(nombreM); 
+    if(m!=null){ //Verificiar que la mascota se encuentre
+      p1.adoptar(m);
+      r.eliminarMascota(m);
+    } else{
+      System.out.println("Mascota no encontrada");
+    }
+    //Imprimir listas
+    System.out.println(r.lstDuenos);
+    System.out.println(r.lstMascotas);
   }
-  
+
 }
+

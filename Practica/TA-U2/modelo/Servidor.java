@@ -48,7 +48,6 @@ public class Servidor {
         Random rand = new Random();
         int n = rand.nextInt(letras.length);
         this.clave= clave+letras[n];
-
         }
     }
 
