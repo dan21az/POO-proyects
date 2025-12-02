@@ -1,3 +1,0 @@
-201912345,Luis Salazar,Machala,123,Av. 9 de Octubre
-201912346,Jose Carbo,Quito,123,Ballen
-201912345,Carlos Panchana,Chimborazo,123,F. Cordero
