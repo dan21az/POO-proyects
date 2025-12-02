@@ -1,0 +1,6 @@
+Pedro Ortiz;Portero;Club Sport Emelec;EMELEC
+Luca Sosa;Defensa;Club Sport Emelec;EMELEC
+Javier Burrai;Portero;Barcelona Sporting Club;BSC
+Franklin Guerra;Defensa;Liga Deportiva Universitaria de Quito;LDU
+Darío Aimar;Defensa;Barcelona Sporting Club;BSC
+Adrián Gabbarini;Portero;Liga Deportiva Universitaria de Quito;LDU

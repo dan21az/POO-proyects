@@ -1,0 +1,44 @@
+ class Cliente {
+    String nombre;
+    int porcDescuento;
+    boolean esAfiliado;
+
+    public void revisarMenu(){
+        System.out.println("Cliente " + nombre + " revisa el menu");
+    }
+    public boolean pagar(double valor){
+        System.out.println("Cliente " + nombre + " paga: " + valor);
+        return true;
+    }
+
+    public double pagarFactura(Factura factura){
+        System.out.println("Cliente " + nombre + " paga total factura: " + factura.getTotal());
+        return factura.getTotal();
+    }
+}
+
+class Factura {
+    String fecha;
+    double total;
+
+    public double getTotal() {
+        return total;
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Clases y objetos");
+        Cliente cliente1 = new Cliente();
+        cliente1.nombre = "Gladys"; 
+        //llamando a  metodos
+        cliente1.revisarMenu();
+        cliente1.pagar(30);
+        Factura f1 = new Factura();
+        f1.total = 30;
+        cliente1.pagarFactura(f1);
+     
+    }
+}
