@@ -52,3 +52,16 @@ build/
 .apt_generated/
 .factorypath
 .springBeans
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+build/
