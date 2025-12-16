@@ -5,7 +5,7 @@ import java.io.*;
 
 import espol.poo.utils.*;
 
-public class Equipo implements BienAsegurado, Comparable<Equipo>{
+public class Equipo implements BienAsegurado, Comparable<Equipo> {
     private String codigo;
     private String descripcion;
     private float costoAlquiler;
