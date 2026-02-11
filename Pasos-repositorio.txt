@@ -9,7 +9,6 @@ escribir git:clone
 
 PASO 3
 Pegar el URL del repositorio
-FP-Python: https://github.com/dan21az/FP-python.git
 POO-Java: https://github.com/dan21az/POO-proyects.git
 
 PASO 4
